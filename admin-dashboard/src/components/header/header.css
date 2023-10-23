@@ -1,0 +1,31 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.menu{
+    display: none;
+}
+
+@media screen and (max-width:450px){
+    .menu{
+        display: block;
+    }
+}
+
+.header h2{
+    font-size: 1.8rem;
+}
+
+.search-container{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search-container input{
+    border: none;
+    height: 3rem;
+    outline: none;
+}

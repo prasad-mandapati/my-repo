@@ -1,0 +1,285 @@
+:root {
+  --i1: 1;
+  --i2: 2;
+  --i3: 3;
+  --i4: 4;
+  --i5: 5;
+  --i6: 6;
+  --i7: 7;
+  --i8: 8;
+  --i9: 9;
+  --i10: 10;
+  --i11: 11;
+  --i12: 12;
+  --i13: 13;
+  --i14: 14;
+  --i15: 15;
+  --i16: 16;
+  --i17: 17;
+  --i18: 18;
+  --i19: 19;
+  --i20: 20;
+  --i21: 21;
+  --i22: 22;
+  --i23: 23;
+  --i24: 24;
+  --i25: 25;
+  --i26: 26;
+  --i27: 27;
+  --i28: 28;
+  --i29: 29;
+  --i30: 30;
+  --i31: 31;
+  --i32: 32;
+  --i33: 33;
+  --i34: 34;
+  --i35: 35;
+  --i36: 36;
+  --i37: 37;
+  --i38: 38;
+  --i39: 39;
+  --i40: 40;
+  --i41: 41;
+  --i42: 42;
+  --i43: 43;
+  --i44: 44;
+  --i45: 45;
+  --i46: 46;
+  --i47: 47;
+  --i48: 48;
+  --i49: 49;
+  --i50: 50;
+  --i51: 51;
+}
+.load-container {
+  position: relative;
+  width: 256px;
+  height: 256px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.load-container span {
+  position: absolute;
+  left:26%;
+  width: 32px;
+  height: 5px;
+  transform-origin: 58px;
+  border-radius: 8px;
+  animation: animateBlink 3s linear infinite;
+}
+.load-container span:nth-child(1) {
+  transform: scale(2.2) rotate(calc(var(--i1) * (360deg / 50)));
+  animation-delay: calc(var(--i1) * (3s / 50));
+}
+.load-container span:nth-child(2) {
+  transform: scale(2.2) rotate(calc(var(--i2) * (360deg / 50)));
+  animation-delay: calc(var(--i2) * (3s / 50));
+}
+.load-container span:nth-child(3) {
+  transform: scale(2.2) rotate(calc(var(--i3) * (360deg / 50)));
+  animation-delay: calc(var(--i3) * (3s / 50));
+}
+.load-container span:nth-child(4) {
+  transform: scale(2.2) rotate(calc(var(--i4) * (360deg / 50)));
+  animation-delay: calc(var(--i4) * (3s / 50));
+}
+.load-container span:nth-child(5) {
+  transform: scale(2.2) rotate(calc(var(--i5) * (360deg / 50)));
+  animation-delay: calc(var(--i5) * (3s / 50));
+}
+.load-container span:nth-child(6) {
+  transform: scale(2.2) rotate(calc(var(--i6) * (360deg / 50)));
+  animation-delay: calc(var(--i6) * (3s / 50));
+}
+.load-container span:nth-child(7) {
+  transform: scale(2.2) rotate(calc(var(--i7) * (360deg / 50)));
+  animation-delay: calc(var(--i7) * (3s / 50));
+}
+.load-container span:nth-child(8) {
+  transform: scale(2.2) rotate(calc(var(--i8) * (360deg / 50)));
+  animation-delay: calc(var(--i8) * (3s / 50));
+}
+.load-container span:nth-child(9) {
+  transform: scale(2.2) rotate(calc(var(--i9) * (360deg / 50)));
+  animation-delay: calc(var(--i9) * (3s / 50));
+}
+.load-container span:nth-child(10) {
+  transform: scale(2.2) rotate(calc(var(--i10) * (360deg / 50)));
+  animation-delay: calc(var(--i10) * (3s / 50));
+}
+.load-container span:nth-child(11) {
+  transform: scale(2.2) rotate(calc(var(--i11) * (360deg / 50)));
+  animation-delay: calc(var(--i11) * (3s / 50));
+}
+.load-container span:nth-child(12) {
+  transform: scale(2.2) rotate(calc(var(--i12) * (360deg / 50)));
+  animation-delay: calc(var(--i12) * (3s / 50));
+}
+.load-container span:nth-child(13) {
+  transform: scale(2.2) rotate(calc(var(--i13) * (360deg / 50)));
+  animation-delay: calc(var(--i13) * (3s / 50));
+}
+.load-container span:nth-child(14) {
+  transform: scale(2.2) rotate(calc(var(--i14) * (360deg / 50)));
+  animation-delay: calc(var(--i14) * (3s / 50));
+}
+.load-container span:nth-child(15) {
+  transform: scale(2.2) rotate(calc(var(--i15) * (360deg / 50)));
+  animation-delay: calc(var(--i15) * (3s / 50));
+}
+.load-container span:nth-child(16) {
+  transform: scale(2.2) rotate(calc(var(--i16) * (360deg / 50)));
+  animation-delay: calc(var(--i16) * (3s / 50));
+}
+.load-container span:nth-child(17) {
+  transform: scale(2.2) rotate(calc(var(--i17) * (360deg / 50)));
+  animation-delay: calc(var(--i17) * (3s / 50));
+}
+.load-container span:nth-child(18) {
+  transform: scale(2.2) rotate(calc(var(--i18) * (360deg / 50)));
+  animation-delay: calc(var(--i18) * (3s / 50));
+}
+.load-container span:nth-child(19) {
+  transform: scale(2.2) rotate(calc(var(--i19) * (360deg / 50)));
+  animation-delay: calc(var(--i19) * (3s / 50));
+}
+.load-container span:nth-child(20) {
+  transform: scale(2.2) rotate(calc(var(--i20) * (360deg / 50)));
+  animation-delay: calc(var(--i20) * (3s / 50));
+}
+.load-container span:nth-child(21) {
+  transform: scale(2.2) rotate(calc(var(--i21) * (360deg / 50)));
+  animation-delay: calc(var(--i21) * (3s / 50));
+}
+.load-container span:nth-child(22) {
+  transform: scale(2.2) rotate(calc(var(--i22) * (360deg / 50)));
+  animation-delay: calc(var(--i22) * (3s / 50));
+}
+.load-container span:nth-child(23) {
+  transform: scale(2.2) rotate(calc(var(--i23) * (360deg / 50)));
+  animation-delay: calc(var(--i23) * (3s / 50));
+}
+.load-container span:nth-child(24) {
+  transform: scale(2.2) rotate(calc(var(--i24) * (360deg / 50)));
+  animation-delay: calc(var(--i24) * (3s / 50));
+}
+.load-container span:nth-child(25) {
+  transform: scale(2.2) rotate(calc(var(--i25) * (360deg / 50)));
+  animation-delay: calc(var(--i25) * (3s / 50));
+}
+.load-container span:nth-child(26) {
+  transform: scale(2.2) rotate(calc(var(--i26) * (360deg / 50)));
+  animation-delay: calc(var(--i26) * (3s / 50));
+}
+.load-container span:nth-child(27) {
+  transform: scale(2.2) rotate(calc(var(--i27) * (360deg / 50)));
+  animation-delay: calc(var(--i27) * (3s / 50));
+}
+.load-container span:nth-child(28) {
+  transform: scale(2.2) rotate(calc(var(--i28) * (360deg / 50)));
+  animation-delay: calc(var(--i28) * (3s / 50));
+}
+.load-container span:nth-child(29) {
+  transform: scale(2.2) rotate(calc(var(--i29) * (360deg / 50)));
+  animation-delay: calc(var(--i29) * (3s / 50));
+}
+.load-container span:nth-child(30) {
+  transform: scale(2.2) rotate(calc(var(--i30) * (360deg / 50)));
+  animation-delay: calc(var(--i30) * (3s / 50));
+}
+.load-container span:nth-child(31) {
+  transform: scale(2.2) rotate(calc(var(--i31) * (360deg / 50)));
+  animation-delay: calc(var(--i31) * (3s / 50));
+}
+.load-container span:nth-child(32) {
+  transform: scale(2.2) rotate(calc(var(--i32) * (360deg / 50)));
+  animation-delay: calc(var(--i32) * (3s / 50));
+}
+.load-container span:nth-child(33) {
+  transform: scale(2.2) rotate(calc(var(--i33) * (360deg / 50)));
+  animation-delay: calc(var(--i33) * (3s / 50));
+}
+.load-container span:nth-child(34) {
+  transform: scale(2.2) rotate(calc(var(--i34) * (360deg / 50)));
+  animation-delay: calc(var(--i34) * (3s / 50));
+}
+.load-container span:nth-child(35) {
+  transform: scale(2.2) rotate(calc(var(--i35) * (360deg / 50)));
+  animation-delay: calc(var(--i35) * (3s / 50));
+}
+.load-container span:nth-child(36) {
+  transform: scale(2.2) rotate(calc(var(--i36) * (360deg / 50)));
+  animation-delay: calc(var(--i36) * (3s / 50));
+}
+.load-container span:nth-child(37) {
+  transform: scale(2.2) rotate(calc(var(--i37) * (360deg / 50)));
+  animation-delay: calc(var(--i37) * (3s / 50));
+}
+.load-container span:nth-child(38) {
+  transform: scale(2.2) rotate(calc(var(--i38) * (360deg / 50)));
+  animation-delay: calc(var(--i38) * (3s / 50));
+}
+.load-container span:nth-child(39) {
+  transform: scale(2.2) rotate(calc(var(--i39) * (360deg / 50)));
+  animation-delay: calc(var(--i39) * (3s / 50));
+}
+.load-container span:nth-child(40) {
+  transform: scale(2.2) rotate(calc(var(--i40) * (360deg / 50)));
+  animation-delay: calc(var(--i40) * (3s / 50));
+}
+.load-container span:nth-child(41) {
+    transform: scale(2.2) rotate(calc(var(--i41) * (360deg / 50)));
+    animation-delay: calc(var(--i41) * (3s / 50));
+  }
+  .load-container span:nth-child(42) {
+    transform: scale(2.2) rotate(calc(var(--i42) * (360deg / 50)));
+    animation-delay: calc(var(--i42) * (3s / 50));
+  }
+  .load-container span:nth-child(43) {
+    transform: scale(2.2) rotate(calc(var(--i43) * (360deg / 50)));
+    animation-delay: calc(var(--i43) * (3s / 50));
+  }
+  .load-container span:nth-child(44) {
+    transform: scale(2.2) rotate(calc(var(--i44) * (360deg / 50)));
+    animation-delay: calc(var(--i44) * (3s / 50));
+  }
+  .load-container span:nth-child(45) {
+    transform: scale(2.2) rotate(calc(var(--i45) * (360deg / 50)));
+    animation-delay: calc(var(--i45) * (3s / 50));
+  }
+  .load-container span:nth-child(46) {
+    transform: scale(2.2) rotate(calc(var(--i46) * (360deg / 50)));
+    animation-delay: calc(var(--i46) * (3s / 50));
+  }
+  .load-container span:nth-child(47) {
+    transform: scale(2.2) rotate(calc(var(--i47) * (360deg / 50)));
+    animation-delay: calc(var(--i47) * (3s / 50));
+  }
+  .load-container span:nth-child(48) {
+    transform: scale(2.2) rotate(calc(var(--i48) * (360deg / 50)));
+    animation-delay: calc(var(--i48) * (3s / 50));
+  }
+  .load-container span:nth-child(49) {
+    transform: scale(2.2) rotate(calc(var(--i49) * (360deg / 50)));
+    animation-delay: calc(var(--i49) * (3s / 50));
+  }
+  .load-container span:nth-child(50) {
+    transform: scale(2.2) rotate(calc(var(--i50) * (360deg / 50)));
+    animation-delay: calc(var(--i50) * (3s / 50));
+  }
+  .load-container span:nth-child(51) {
+    transform: scale(2.2) rotate(calc(var(--i51) * (360deg / 50)));
+    animation-delay: calc(var(--i51) * (3s / 50));
+  }
+
+@keyframes animateBlink {
+  0% {
+    background: rgb(255, 255, 255);
+  }
+
+  25% {
+    background: rgba(0, 132, 255, 0.358);
+  }
+}

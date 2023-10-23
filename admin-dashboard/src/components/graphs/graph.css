@@ -1,0 +1,35 @@
+.graph-title h2{
+    font-size: 2.2rem;
+}
+.graph-title p{
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+.bargraph-filter{
+    border: none;
+    outline: none;
+    max-width: 12rem;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    appearance: none;
+    background-color: #cccccc6a;
+    position: relative;
+    flex-basis: 30%;
+}
+
+select{
+    border: none;
+    outline: none;
+    appearance: none;
+    width: 100%;
+    color: grey;
+    background-color: transparent;
+}
+
+.droparrow{
+    position: absolute;
+    right: 10px;
+    font-size: 3rem;
+    color: grey;
+}
+

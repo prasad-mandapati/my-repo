@@ -1,0 +1,23 @@
+form{
+    min-width: 32%;
+}
+
+.list-item{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 600px;
+    width: 100%;
+}
+.list-item h3{
+    flex-basis: 65%;
+    margin-top: 10px;
+}
+
+.icon{
+    transition: all .3s;
+}
+.trash-icon:hover{
+    color: red;
+}

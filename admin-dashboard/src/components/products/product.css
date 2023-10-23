@@ -1,0 +1,44 @@
+thead{
+    position: static;
+    top: 0;
+}
+
+th{
+   font-size: 1.5rem;
+   font-weight: 500;
+   color: gray;
+   padding: 5px 0%;
+}
+
+.--width-60{
+    width: 60%;
+}
+
+td{
+    text-align: center;
+    font-size: small;
+    padding: 5px 0px;
+    border-bottom: 2px solid gray;
+}
+
+tbody{
+
+}
+
+.thumbnail-container{
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 20%;
+}
+
+.thumbnail-container img{
+    max-height: 100%;
+}
+
+.product-content{
+    flex-basis: 80%;
+}

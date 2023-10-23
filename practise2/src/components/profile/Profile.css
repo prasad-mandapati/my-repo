@@ -1,0 +1,35 @@
+.profile-container{
+    /* box-shadow: 0px 0px 20px 5px white; */
+    min-width: 500px;
+    padding: 50px;
+    border-radius: 1rem;
+}
+
+.profile-box{
+    margin-bottom: 2rem;
+    padding: 1.5rem 3rem;
+    border: 2px solid white;
+}
+
+.profile-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+.profile-img img{
+    height: 100%;
+}
+
+.icon{
+    color: var(--color-white);
+    transition: all .3s;
+}
+
+.icon:hover{
+    color: red;
+}

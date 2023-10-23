@@ -1,0 +1,15 @@
+.sidebar{
+    min-width: 200px;
+    height: 100vh;
+    background-color: rgb(255, 7, 7);
+}
+.sidebar h2{
+    color: white;
+}
+
+.card-container{
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

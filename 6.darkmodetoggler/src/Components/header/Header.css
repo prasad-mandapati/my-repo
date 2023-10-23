@@ -1,0 +1,86 @@
+header{
+    position: relative;
+    width: 100%;
+    background-color: var(--background);
+    padding: 2rem 0rem;
+}
+
+header::after{
+    content: "";
+    width: 90%;
+    height: 1px;
+    background-color: var(--foreground);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+nav li{
+    font-size: 16px;
+    list-style-type:none ;
+    margin: 0 10px ;
+}
+
+nav li > a{
+    color: var(--foreground);
+}
+
+.toggler{
+    background-color: var(--background);
+    width: 45px;
+    height: 23px;
+    position: relative;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    transform: scale(1.5);
+    cursor: pointer;
+    border: 1px solid var(--foreground);
+}
+
+.ball{
+    width: 20px;
+    height: 20px;
+    background-color: var(--foreground);
+    padding: 5px;
+    position: absolute;
+    left: 1px;
+    bottom: 0.5px;
+    border-radius: 50%;
+    transition: all 0.2s linear;
+    /* animation: slide-left 0.2s ease-in; */
+}
+
+.ball-right{
+    /* width: 20px;
+    height: 20px;
+    background-color: var(--foreground);
+    padding: 5px;
+    position: absolute;
+    right: 1px;
+    bottom: 0.5px;
+    border-radius: 50%;
+    transition: all 0.2s linear;  */
+    /* animation: slide-right 0.2s ease-in; */
+    transform: translateX(108%);
+}
+
+/* @keyframes slide-left{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+@keyframes slide-right{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+} */

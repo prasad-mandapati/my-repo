@@ -1,0 +1,22 @@
+.center{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-size: 34px;
+    line-height: 1.4;
+    text-align: center;
+    padding-top: 20px;
+    color: white;
+}
+
+.profile-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}

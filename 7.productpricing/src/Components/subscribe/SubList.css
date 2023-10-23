@@ -1,0 +1,53 @@
+.main
+{
+    background-color:#eee;
+}
+
+.toggle-btn{
+    width: 45px;
+    height: 23px;
+    background-color: #ccc;
+    display: flex;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    position: relative;
+    transform: scale(1.5);
+    cursor: pointer;
+}
+
+.toggle-btn-green{
+    background-color:  rgba(95, 201, 52, 1);
+    transition: all 0.5s;
+}
+
+.ball{
+    width: 20px;
+    height: 20px;
+    display: flex;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    left: 2px;
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+.ball-move{
+    transform: translateX(106%);
+}
+
+.sub-plans{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    margin: 0 auto;
+}
+
+@media screen and (max-width : 600px){
+    .sub-plans{
+        flex-direction: column;
+    }
+}

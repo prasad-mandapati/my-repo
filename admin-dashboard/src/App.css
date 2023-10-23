@@ -1,0 +1,22 @@
+.main{
+    position: relative;
+    display: flex;
+    max-height: 100vh;
+}
+
+.close{
+    display: none;
+}
+
+@media screen and (max-width:450px){
+    .main{
+        position: relative;
+    }
+    .sidebar{
+        position: absolute;
+    }
+
+    .close{
+        display: block;
+    }
+}

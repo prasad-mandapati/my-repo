@@ -1,0 +1,35 @@
+.admin-container{
+    overflow-y: scroll;
+}
+
+.graph-container{
+    display: grid;
+    grid-template-areas: 'bargraph ...';
+    grid-gap: 20px 20px;
+    padding: 0 5%;
+}
+
+.bargraph{
+    width: 100%;
+}
+
+@media screen and (max-width:600px){
+    .graph-container{
+        grid-template-areas: 'bargraph' ;
+    }
+
+    .bargraph{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.products-container{
+    padding: 2% 5%;
+}
+
+.products-table{
+    max-height: 50rem ;
+    overflow: scroll;
+    overflow-x: hidden;
+}
