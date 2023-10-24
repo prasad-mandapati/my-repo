@@ -1,28 +1,30 @@
 import React from "react";
 import { FaEdit, FaTrash, FaCheck } from "react-icons/fa";
 
-const Task = () => {
+const Task = ({ id, task, date, completed, iseditable, deleteTask, completeTask }) => {
   return (
-    <div className="task">
+    <div key={id} className={completed ? "task complete" : "task uncomplete"}>
       <span>
         <p>
-          <b>Task:</b> Taks one
+          <b>Task:</b> {task}
         </p>
         <p>
-          <b>Date:</b> 22-04-22
+          <b>Date:</b> {date}
         </p>
       </span>
-      <span>
-        <button>
-          <FaEdit color="green" size={16}/>
-        </button>
-        <button>
-          <FaTrash color="red" size={15}/>
-        </button>
-        <button>
-          <FaCheck color="purple" size={15}/>
-        </button>
-      </span>
+      <div>
+        <span>
+          <button className="icon" onClick={() => iseditable(id)}>
+            <FaEdit color="green" size={16} />
+          </button>
+          <button className="icon" onClick={() => deleteTask(id)}>
+            <FaTrash color="red" size={15} />
+          </button>
+          <button className="icon" onClick={() => completeTask(id)}>
+            <FaCheck color="purple" size={15} />
+          </button>
+        </span>
+      </div>
     </div>
   );
 };

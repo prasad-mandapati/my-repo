@@ -1,17 +1,79 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import "./TaskManager.css";
+import useLocalStorage from "use-local-storage";
 import Task from "./Task";
 
 const TaskManager = () => {
   const [task, setTask] = useState("");
   const [date, setDate] = useState("");
-  const [tasks, setTasks] = useState([]);
+  const [tasks, setTasks] = useLocalStorage("tasks",[]);
+  // const [tasks, setTasks] = useState([]);
+  const [isEditing, setIsEditing] = useState(false);
+  const [taskId, setTaskId] = useState("");
+
+  const inputtaskref = useRef(null);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(task);
-    console.log(date);
+    if (!task || !date) {
+      alert("Please enter the task and date");
+    } else if (task && date && isEditing) {
+      setTasks(
+        tasks.map((item) => {
+          if (item.id === taskId) {
+            return { ...item, task, date, completed: false };
+          } else {
+            return { ...item };
+          }
+        })
+      );
+      setIsEditing(false);
+      setTask("");
+      setDate("");
+    } else {
+      const newTask = {
+        id: Date.now(),
+        task,
+        date,
+        completed: false,
+      };
+      setTasks([...tasks, newTask]);
+      setTask("");
+      setDate("");
+    }
   };
+
+  const handleedit = (id) => {
+    setTaskId(id);
+    setIsEditing(true);
+    const editTask = tasks.find((item) => {
+      return item.id === id;
+    });
+    setTask(editTask.task);
+    setDate(editTask.date);
+  };
+
+  const deleteTask = (id) => {
+    if(window.confirm("Do you want to delete this task") === true){
+      const newTasks = tasks.filter((item) => {
+        return item.id !== id
+      })
+      setTasks(newTasks)
+    }
+  };
+
+  const completeTask = (id) => {
+    setTasks(tasks.map((item) => {
+      if(item.id === id){
+        return {...item,completed:true}
+      }
+      return item
+    }))
+  }
+
+  useEffect(() => {
+    inputtaskref.current.focus();
+  }, []);
 
   return (
     <div className="--bg-primary">
@@ -28,6 +90,7 @@ const TaskManager = () => {
                 placeholder="Enter Task"
                 value={task}
                 onChange={(e) => setTask(e.target.value)}
+                ref={inputtaskref}
               />
             </div>
             <div>
@@ -42,7 +105,7 @@ const TaskManager = () => {
               />
             </div>
             <button className="--btn --btn-success --btn-block">
-              Save Task
+              {!isEditing ? "Save Task" : "Edit Task"}
             </button>
           </form>
         </div>
@@ -51,7 +114,23 @@ const TaskManager = () => {
         <div className="--width-500px">
           <h2 className="--text-light">Task List</h2>
           <hr />
-          <Task />
+          <div>
+            {tasks.length === 0 ? (
+              <p className="--text-light --p">No Tasks are Added</p>
+            ) : (
+              tasks.map((item) => {
+                return (
+                  <Task
+                    key={item.id}
+                    {...item}
+                    iseditable={handleedit}
+                    deleteTask={deleteTask}
+                    completeTask = {completeTask}
+                  />
+                );
+              })
+            )}
+          </div>
         </div>
       </article>
     </div>
